@@ -1,0 +1,127 @@
+.payment-body {
+  /* font-family: "Courier New", Courier, monospace; */
+  /* background-color: hsla(195, 4%, 80%, 0.595); */
+  height: 100vh;
+  margin: 0;
+
+  /* background: linear-gradient(
+    45deg,
+    rgba(59, 12, 64, 1) 0%,
+    rgba(9, 15, 37, 1) 22%,
+    rgba(9, 15, 37, 1) 42%,
+    rgba(9, 15, 37, 1) 65%,
+    rgba(9, 15, 37, 1) 83%,
+    rgba(59, 12, 64, 1) 100%
+  ); */
+}
+#popupContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(39, 51, 117, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.payment {
+  background-color: rgba(59, 12, 64, 0.8);
+  padding: 3%;
+  border-radius: 3%;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(117, 1, 1, 0.1);
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  position: relative;
+}
+
+.payment label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.payment input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 28px;
+  box-sizing: border-box;
+  border: 1px solid #474343;
+  background: 0 0;
+  border-radius: 13px;
+  cursor: pointer;
+  color: white;
+}
+
+.payment-button {
+  background-color: #7caca4;
+  color: rgb(59, 12, 64);
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 9px;
+  width: 50%;
+  cursor: pointer;
+  border: 0;
+  margin-top: 10px;
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.payment input::placeholder {
+  color: white;
+}
+
+.payment input[type="text"] {
+  font-size: 16px;
+}
+
+.payment input:hover {
+  background-color: #413c3c;
+  box-shadow: 4px 6px 12px 0px white;;
+}
+.payment input::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: -1;
+}
+
+.payment button:hover {
+  background-color: #444144;
+  color: white;
+}
+@media (max-width: 768px) {
+  .payment {
+    width: 80%;
+  }
+}
+.p_error {
+  color: red;
+  font-size: 12px;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,127 @@
+/* General Styles */
+
+.container {
+  max-width: 840px;
+  margin: 80px auto;
+  width: 60%;
+  background-color: #2f0a3457;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  border-radius: 4px;
+}
+
+.about-top {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  margin-top: 50px;
+}
+
+.about-heading {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #ffffff;
+  text-align: center;
+}
+.about-paragraph {
+  font-size: 19px;
+  line-height: 1.5;
+  color: #ffffff;
+  -webkit-font-smoothing: none;
+}
+
+.about-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  margin-bottom: 50px;
+}
+
+.our-team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 64px;
+  column-gap: 32px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-img {
+  border-radius: 50%;
+}
+.member-fullname {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+  -webkit-font-smoothing: none;
+
+  color: #fff;
+}
+
+.member-position {
+  font-size: 19px;
+  line-height: 1.2;
+  text-align: center;
+  -webkit-font-smoothing: none;
+  color: #fff;
+}
+
+/* .board {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  max-width: 300px;
+  background-color: rgba(103, 110, 169, 0.395);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(117, 1, 1, 0.1);
+  z-index: 999;
+}
+
+.board.transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+} */
+
+@media screen and (max-width: 992px) {
+  .our-team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 70%;
+  }
+  .our-team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-heading {
+    font-size: 30px;
+  }
+  .about-paragraph {
+    font-size: 18px;
+  }
+}

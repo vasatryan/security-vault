@@ -1,0 +1,304 @@
+.firstPage {
+    width: 92%;
+    /* height: 600px; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.firstTitleParent {
+    width: 60%;
+    height: 100%;
+}
+
+.firstTitle {
+    width: 100%;
+    height: auto;
+}
+
+.welcome {
+    margin-bottom: 60px;
+}
+
+.welcome p {
+    font-family: Bruno Ace;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.3px;
+    text-align: left;
+    color: white;
+}
+
+.securityCheck h1 {
+    font-family: Bruno Ace;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 78.19px;
+    text-align: left;
+    color: #fff;
+}
+
+.homeButtonsParent {
+    height: 10em;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.homeButtons a {
+    margin-right: 30px;
+}
+
+.aboutButton{
+    width: 135px;
+    height: 51px;
+    text-align: center;
+    border-radius: 8px;
+    border: 0.5px solid #FFFFFFB2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.09px;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.aboutButton:hover {
+    background: #3b0c40;
+}
+
+.discoverUs {
+    width: 172px;
+    height: 51px;
+    padding: 16px 0 16px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.09px;
+    text-align: center;
+    background: #B3E0CC;
+    transition: 0.25s;
+}
+
+.discoverUs:hover {
+    background: #3B0C40;
+    color: white;
+}
+
+.firstImg {
+    width: 40%;
+}
+
+
+.firstImg img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+.package {
+    max-width: 250px;
+    border: 1px solid black;
+}
+
+.package>div {
+    padding: 5px 0;
+}
+
+.package_header {
+    display: flex;
+}
+
+.package_rating {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.package_rating>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+}
+
+.package_body {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.package_body_args {
+    border-top: 1px solid black;
+
+}
+
+.card_wrap {
+    width: 100%;
+    height: 100%;
+    background: #18D9C6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.card {
+    width: fit-content;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.card_name {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+}
+
+.card_price {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    color: #0D0D0D;
+}
+
+.card ul li{
+    color: #0D0D0D;
+}
+
+.buy {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 10px 30px;
+    border: 1px solid rgb(17 12 12);
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #4b4b37;
+}
+
+.buy:hover {
+    background: rgba(255,255,255,.3);
+    color: #fff;
+    transition: .5s ease;
+}
+
+.info {
+    color: #0D0D0D;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.card a {
+    color:#0D0D0D;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.card a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .securityCheck h1 {
+        font-size: 79px;
+        line-height: 77.19px;
+    }
+    .firstImg {
+        margin-top: 6em;
+        width: 28em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .securityCheck h1 {
+        font-size: 64px;
+        line-height: 64.19px;
+    }
+    .firstImg {
+        margin-top: 6em;
+        width: 20em;
+    }
+}
+
+@media screen and (max-width: 702px) {
+    .firstPage {
+        display: ruby; /* Поправил на display: block; */
+    }
+    .firstImg {
+        display: none; /* Поправил на display: inline; */
+    }
+    .securityCheck h1 {
+        font-size: 45px;
+        line-height: 52.19px;
+    }
+    .welcome p {
+        font-size: 19px;
+    }
+    .discoverUs {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .firstPage {
+        display: ruby; /* Поправил на display: block; */
+    }
+
+    .firstImg {
+        display: none; /* Поправил на display: inline; */
+    }
+    .securityCheck h1 {
+        font-size: 45px;
+        line-height: 52.19px;
+    }
+
+    .welcome p {
+        font-size: 19px;
+    }
+    .discoverUs {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .firstPage {
+        display: ruby; /* Поправил на display: block; */
+    }
+
+    .firstImg {
+        display: none; /* Поправил на display: inline; */
+    }
+    .securityCheck h1 {
+        font-size: 45px;
+        line-height: 52.19px;
+    }
+    .welcome p {
+        font-size: 19px;
+    }
+    .discoverUs {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    .firstPage {
+        display: ruby; /* Поправил на display: block; */
+    }
+    .firstImg {
+        display: none; /* Поправил на display: inline; */
+    }
+    .securityCheck h1 {
+        font-size: 40px;
+        line-height: 50.19px;
+    }
+    .discoverUs {
+        margin-top: 15px;
+    }
+}

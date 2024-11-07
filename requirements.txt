@@ -1,0 +1,14 @@
+fastapi[all]
+uvicorn
+sqlalchemy
+alembic
+jinja2
+asyncpg
+asyncio
+cryptography
+passlib
+bcrypt
+pyjwt
+aiohttp
+requests
+aiosmtplib

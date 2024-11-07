@@ -1,0 +1,156 @@
+.signup-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  margin: 0;
+}
+
+.container {
+  background-color: #002025;
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 6px;
+  opacity: 0.9;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 9px;
+  padding: 10px;
+  margin-top: 14.14px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: calc(100% - 20px);
+  padding: 17px;
+  border-radius: 7px;
+  border: 1px solid #dad5d5;
+  color: white;
+  font-size: 15px;
+}
+
+.btn {
+  display: block;
+  width: 40%;
+  padding: 18px;
+  background-color: rgb(85, 139, 123);
+  color: #1c022ed8;
+  font-weight: bold;
+  margin: auto;
+  border: none;
+  margin-top: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #4b185e;
+  color: rgb(235, 232, 232);
+}
+
+.input-group input:hover {
+  background-color: #42004b8a;
+  border-color: #42004b84;
+  box-shadow: 0 2px 11px 0 rgba(228, 228, 234, 0.5);
+}
+
+.input-group input:hover::placeholder {
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.or-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.or-line .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: white;
+}
+
+.or {
+  padding: 0 10px;
+  color: white;
+}
+
+.facebook-btn {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png");
+}
+
+.google-btn {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png");
+}
+.twitter-btn {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/036/623/777/small/social-media-x-logo-black-and-white-free-png.png");
+}
+
+.social-buttons button {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sign-in-with {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.sign-in-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sign-in-link a {
+  color: #fff;
+}
+
+.sign-in-link a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.input-group input:hover {
+  background-color: #42004b8a;
+  border-color: #42004b84;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .input-group input {
+    width: calc(100% - 20px);
+  }
+}

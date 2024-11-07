@@ -1,0 +1,173 @@
+.loginbody {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form container */
+.loginForm {
+  width: 471px;
+  height: 564px;
+  top: 112px;
+  left: 485px;
+  padding: 48px 64px 48px 64px;
+  gap: 24px;
+  border-radius: 16px;
+  opacity: 0px;
+  background: #002025;
+}
+
+.btn:hover {
+  background-color: #45a049; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+/*move it to the center*/
+/* Styles for labels */
+.loginForm label {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  width: 308.83px;
+  text-align: center;
+}
+
+.btn {
+  width: 40%;
+  display: block;
+  background-color: rgb(85, 130, 123);
+  color: #1c022ed8;
+  font-weight: bold;
+  padding: 19px;
+  margin: 30px auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Text Field Styles */
+.loginForm input[type="email"],
+input[type="password"] {
+  width: 343px;
+  height: 56px;
+  padding: 14px;
+  font-size: 15px;
+  margin: 9px 14.14px;
+  margin-top: 20px;
+  border: 0.8px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box; /* Taking into account internal padding and border widths */
+  background-color: #002025;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #4b185e;
+  color: rgb(235, 232, 232);
+}
+
+
+/* Text Field Styles */
+.loginForm input[type="email"]:hover,
+.loginForm input[type="password"]:hover {
+  background-color: #42004b8a; /* Change background color on hover */
+  border-color: #42004b84; /* Change border color on hover */
+  box-shadow: 0 2px 11px 0 rgba(228, 228, 234, 0.5);
+}
+
+
+.sign-up-section{
+  text-align: center;
+}
+.sign-up-section a{
+  color: #fff;
+}
+
+#SignUp:hover {
+  color: rgb(37, 98, 189);
+  cursor: pointer;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 27.88px;
+  letter-spacing: -0.6969602108001709px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.OrLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.OrLine .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: white;
+}
+
+.or {
+  padding: 0 10px;
+  color: white;
+}
+
+.facebook-btn {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png");
+}
+
+.google-btn {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png");
+}
+.twitter-btn {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/036/623/777/small/social-media-x-logo-black-and-white-free-png.png");
+}
+
+.social-buttons button {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sign-in-with {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.sign-in-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sign-in-link a {
+  color: #fff;
+}
+
+.sign-in-link a:hover {
+  background-color: #4b185e;
+  color: rgb(235, 232, 232);
+  box-shadow: 0 2px 11px 0 rgba(228, 228, 234, 0.5);
+}
+
+.error {
+  color: red;
+  margin-left: 17px;
+}

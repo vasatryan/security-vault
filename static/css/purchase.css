@@ -1,0 +1,162 @@
+.purchase-body {
+  font-family: Arial, sans-serif;
+  /* background: #9b9898; */
+}
+
+.receipt {
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  padding: 16px;
+  margin: 10px;
+  border: 1px solid #eee7e7;
+  border-radius: 13px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+
+.product img {
+  width: 100px;
+  height: 100px; /* Adjust as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  display: block;
+  border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
+.product-info {
+  color: #333;
+}
+
+.product-info h3 {
+  margin: 5px 0;
+  color: whitesmoke;
+}
+
+.product-info p {
+  margin: 5px 0;
+  font-weight: lighter;
+  color: #f9f9f9;
+}
+
+.product-info p.description {
+  color: white; /* Change text color for product description */
+}
+
+.total {
+  text-align: right;
+  margin: 10px;
+  border: 1px solid #eee7e7;
+  border-radius: 11.5px;
+  padding: 14px;
+  max-width: 300px;
+}
+
+.total span {
+  font-weight: 550;
+  color: #f0efef;
+}
+
+.purchase-date {
+  font-weight: 550;
+  color: #f0efef;
+  margin-top: 8px;
+}
+
+/* Background images for products */
+.product {
+  background-color: #1f0332;
+  max-height: 270px;
+}
+
+.price {
+  font-weight: 550;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .description {
+    font-size: 1.5ch;
+  }
+  .price {
+    font-weight: 550;
+    font-size: 13px;
+  }
+  .product {
+    max-height: 270px;
+    min-width: 20px;
+    margin: 7px;
+  }
+  .total {
+    margin: 7px;
+  }
+  .total span {
+    font-size: 15px;
+  }
+
+  .purchase-date {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .description {
+    font-size: 1.3ch;
+  }
+  .price {
+    font-weight: 550;
+    font-size: 13px;
+  }
+  .product {
+    max-height: 270px;
+    min-width: 20px;
+    margin: 5px;
+  }
+  .total {
+    margin: 5px;
+  }
+  .total span {
+    font-size: 12px;
+  }
+
+  .purchase-date {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .description {
+    font-size: 1.1ch;
+  }
+  .price {
+    font-weight: 550;
+    font-size: 11px;
+  }
+  .product {
+    max-height: 270px;
+    min-width: 60px;
+    margin: 3px;
+  }
+  .total {
+    margin: 3px;
+  }
+  .desc {
+    font-size: 15px;
+  }
+  .total span {
+    font-size: 10px;
+  }
+
+  .purchase-date {
+    font-size: 10px;
+  }
+}

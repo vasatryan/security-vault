@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница регистрации</title>
+    <link rel="stylesheet" href="../../static/css/sign_up.css" />
+    <link rel="stylesheet" href="../../static/css/reset.css" />
+  </head>
+  <body class="signup-body">
+    <div class="container">
+      <h1>Зарегистрироваться</h1>
+      <form id="registrationForm">
+        <div class="input-group">
+          <input
+            type="text"
+            id="nickname"
+            name="nickname"
+            placeholder="Имя"
+            required
+          />
+          <span class="error" id="error_first_name"></span>
+
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            id="nickname"
+            name="nickname"
+            placeholder="Фамилия"
+            required
+          />
+          <span class="error" id="error_last_name"></span>
+        </div>
+        <div class="input-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Почта"
+            required
+          />
+          <span class="error" id="error_email"></span>  
+        </div>
+        <div class="input-group">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Номер телефона"
+            required
+          />
+          <span class="error" id="error_phone"></span>
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Пароль"
+            required
+          />
+          <span class="error" id="error_password"></span>
+          </div>
+        <div class="input-group">
+          <input
+            type="password"
+            id="repeat_password"
+            name="repeat_password"
+            placeholder="Повторите пароль"
+            required
+          />
+          <span class="error" id="repeat_passwordError"></span>
+        </div>
+        <button type="button" id="createBtn" class="btn">
+          Зарегистрироваться
+        </button>
+      </form>
+      <div class="or-line">
+        <span class="line"></span>
+        <span class="or">или</span>
+        <span class="line"></span>
+      </div>
+      <div class="sign-in-with">Войти в систему</div>
+      <div class="social-buttons">
+        <button class="facebook-btn"></button>
+        <button class="google-btn"></button>
+        <button class="twitter-btn"></button>
+      </div>
+      <div class="sign-in-link">
+        У вас уже есть аккаунт? <a href="/ru/login">Войти</a>
+      </div>
+    </div>
+
+    <div class="container-dark" style="display: none">
+      <input type="checkbox" id="toggle" class="toggle_input" checked />
+      <div class="display">
+        <label for="toggle" class="toggle_label">
+          <div class="circle">
+            <svg
+              class="sun toggle_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+              />
+            </svg>
+            <svg
+              class="moon toggle_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <!-- <script src="../../static/scripts/sign_up.js"></script> -->
+    <script src="../../static/scripts/darkmode.js"></script>
+
+<script>
+    const form = document.getElementById("registrationForm");
+    const firstNameError = document.getElementById("error_first_name");
+    const lastNameError = document.getElementById("error_last_name");
+    const emailError = document.getElementById("error_email");
+    const phoneError = document.getElementById("error_phone");
+    const passwordError = document.getElementById("error_password");
+    const repeatPasswordError = document.getElementById("error_repeat_password");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const response = await fetch("/signup/", {
+            method: "POST",
+            body: formData
+        });
+        const data = await response.json();
+        if (response.ok) {
+            // Redirect or do something else upon successful registration
+            window.location.href = "/";
+        } else {
+            // Display error messages
+            if (data.errors) {
+                if (data.errors.first_name) {
+                    firstNameError.textContent = data.errors.first_name;
+                }
+                if (data.errors.last_name) {
+                    lastNameError.textContent = data.errors.last_name;
+                }
+                if (data.errors.email) {
+                    emailError.textContent = data.errors.email;
+                }
+                if (data.errors.phone) {
+                    phoneError.textContent = data.errors.phone;
+                }
+                if (data.errors.password) {
+                    passwordError.textContent = data.errors.password;
+                }
+                if (data.errors.repeat_password) {
+                    repeatPasswordError.textContent = data.errors.repeat_password;
+                }
+            }
+        }
+    });
+</script> 
+</body>
+</html>

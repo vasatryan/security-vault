@@ -1,0 +1,6 @@
+/venv/
+/app/certs/
+/.idea/
+/.DS_Store
+/src/report_mail.txt
+/.env

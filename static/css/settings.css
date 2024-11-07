@@ -1,0 +1,80 @@
+.settingDropdown {
+  margin: 20px;
+  padding-top: 3px;
+}
+
+.dropdown-content-profile {
+  display: none;
+  position: absolute;
+  top: 70px;
+  background-color: #090f25;
+  min-width: fit-content;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content-profile button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+
+.dropdown-content-profile button:hover {
+  background-color: #000000c2;
+}
+
+.item {
+  font-size: 100%;
+  padding-top: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+.profbtn :hover {
+  color: aliceblue;
+}
+
+/* .darkItem {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  font-family: sans-serif;
+  padding-top: 5px;
+} */
+
+/* #backToggle {
+  height: 20px;
+  width: 25px;
+  cursor: pointer;
+  user-select: none;
+} */
+
+/* #cont {
+  font-size: 80px;
+  border: none;
+} */
+
+@media screen and (max-width:426px) {
+  .settingDropdown{
+    margin: 0px 7px 0px 21px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .settingDropdown{
+    margin: 0px 10px 0px 21px;
+  }
+}
+
+
+@media screen and (max-width:320px) {
+  .settingDropdown{
+    margin: 0px 7px 0px 21px;
+  }
+}

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* Define the font family for the FAQ container */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style the h1 element inside the FAQ container */
+.faq-container h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.question-container {
+  padding-inline: 20%;
+}
+
+/* Style the details element with the 'question-details' class */
+.question-details {
+  background-color: rgba(59, 12, 64, 0.5);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 150%;
+}
+
+/* Style the summary element with the 'question-summary' class */
+.question-summary {
+  padding: 1em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+  cursor: pointer;
+}
+
+/* Hide the default details marker */
+.question-summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Add a custom marker for closed summaries */
+.question-summary:after {
+  content: "\002B";
+}
+
+/* Style the summary when the details are open */
+.question-details[open] .question-summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+/* Change the marker when the details are open */
+.question-details[open] .question-summary:after {
+  content: "\00D7";
+}
+
+/* Style the content inside the details */
+.question-details div {
+  padding: 0.5em 1em;
+}
